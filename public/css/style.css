@@ -1,0 +1,144 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    font-family: "Arial";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+a:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-width: 0 0 0px;
+    border-style: solid;
+}
+
+a:hover:after{
+    border-width: 0 0 1px;
+}
+
+.about-link {
+    color: #222;
+}
+
+/* #428479 */
+.container {
+    padding: 30px 20px;
+}
+
+.header-wrap, footer {
+    background-color: #428479; 
+}
+
+.header-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header-nav li a {
+    color: white;
+    font-weight: bold;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+.app-wrap {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('https://images.unsplash.com/photo-1489065094455-c2d576ff27a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.app-form-inner-wrap {
+    display: inline-block;
+    padding: 50px 80px;
+    background: rgba(255,255,255,.8);
+    border-radius: 15px;
+}
+
+.app-form {
+    text-align: center;
+}
+
+input, button {
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px rgba(0,0,0,.6);
+    margin: 0 5px 0 5px;
+}
+
+button {
+    cursor: pointer;
+    background: #428479; 
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1a3a34;
+}
+
+
+h1 {
+    color: #428479;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-wrap .container{ 
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 550px) {
+    .app-form {
+        padding: 0;
+    }
+    .app-form-inner-wrap {
+        padding: 50px 20px;
+    }
+
+    input{
+        margin-bottom: 15px;
+    }
+
+    .footer-wrap .container{ 
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-wrap .container p{ 
+        margin: 10px 0;
+    }
+
+}
